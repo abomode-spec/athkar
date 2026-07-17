@@ -17,7 +17,7 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;background:#06111e;font-family:'Amiri','Tajawal',sans-serif;direction:rtl}
 body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
-.app{width:100%;max-width:430px;min-height:100vh;min-height:100dvh;background:#a3ccde;display:flex;flex-direction:column;position:relative;overflow:hidden;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.app{width:100%;max-width:430px;min-height:100vh;min-height:100dvh;background:linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%);background-attachment:fixed;display:flex;flex-direction:column;position:relative;overflow:hidden;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
 .app::before{content:'';position:absolute;top:-80px;left:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(15,56,97,0.04),transparent 70%);border-radius:50%;pointer-events:none}
 .hdr{padding:6px 16px 6px;text-align:center;background:rgba(0,0,0,0.28);border-bottom:1px solid var(--gbrd)}
 .horn{display:none}
@@ -28,16 +28,16 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .tab.on{color:var(--gold);border-bottom:2px solid var(--gold)}
 .pbar{height:3px;background:rgba(255,255,255,0.9)}
 .pfill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .5s}
-.main{flex:1;display:flex;flex-direction:column;padding:12px 14px 0;position:relative;z-index:1}
+.main{flex:1;display:flex;flex-direction:column;padding:4px 14px 0;position:relative;z-index:1}
 .tap-zone{flex:1;min-height:20px;cursor:pointer}
-.cbar{display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.2);border:1px solid var(--gbrd);border-radius:12px;padding:6px 14px;margin-top:14px;margin-bottom:9px}
+.cbar{display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,0.2);border:1px solid var(--gbrd);border-radius:7px;height:22px;padding:0 12px;box-sizing:border-box}
 .cr{display:flex;align-items:center;gap:8px}
-.fbtn{width:28px;height:28px;border-radius:50%;background:var(--gdim);border:1px solid rgba(15,56,97,0.3);color:var(--gold);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.fbtn{width:16px;height:16px;border-radius:50%;background:var(--gdim);border:1px solid rgba(15,56,97,0.3);color:var(--gold);font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;padding:0}
 .fbtn:active{background:rgba(15,56,97,0.35)}
 .fsl{color:var(--gold);font-size:12px;min-width:22px;text-align:center;font-family:sans-serif}
 .flb{color:rgba(15,56,97,0.45);font-size:10px;font-family:sans-serif}
 .ixl{color:rgba(15,56,97,0.8);font-size:18px;font-weight:600;font-family:sans-serif}
-.card{background:rgba(255,255,255,0.85);border:1px solid var(--gbrd);border-radius:20px;height:calc(100vh - 220px);height:calc(100dvh - 220px);min-height:380px;max-height:600px;display:flex;flex-direction:column;overflow:hidden;margin-bottom:8px;position:relative;transition:border-color .15s,box-shadow .15s}
+.card{background:#f4efe3;border:1px solid var(--gbrd);border-radius:20px;height:calc(100vh - 210px);height:calc(100dvh - 210px);min-height:380px;max-height:640px;display:flex;flex-direction:column;overflow:hidden;margin-bottom:8px;position:relative;transition:border-color .15s,box-shadow .15s}
 .card.big{height:calc(100vh - 160px) !important;height:calc(100dvh - 160px) !important;max-height:650px;overflow-y:auto;}
 .card::before{content:'';position:absolute;top:0;right:0;width:70px;height:70px;background:radial-gradient(circle at top right,rgba(15,56,97,0.05),transparent 70%);pointer-events:none}
 .cname{color:var(--gold);font-size:10px;text-align:center;padding:8px 16px 6px;letter-spacing:2px;opacity:.62;font-family:sans-serif;border-bottom:1px solid rgba(15,56,97,0.1);flex-shrink:0}
@@ -45,9 +45,9 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .dtext{color:var(--tx);text-align:center;font-family:'Amiri','Tajawal',sans-serif;width:100%;line-height:1.85;word-break:normal;overflow-wrap:break-word;hyphens:none;word-spacing:normal}
 .dtext.center{text-align:center;text-align-last:center}
 .an{color:var(--gold);font-size:.72em;vertical-align:middle;margin:0 1px;opacity:.8}
-.dsrc{color:rgba(15,56,97,0.38);font-size:10px;text-align:center;padding:5px 16px 7px;font-family:sans-serif;flex-shrink:0}
-.dfaida{color:rgba(100,200,150,0.75);font-size:11px;text-align:center;padding:5px 14px 0;font-family:sans-serif;flex-shrink:0;line-height:1.5}
-.dots{display:flex;justify-content:center;flex-wrap:wrap;gap:5px;margin-bottom:6px;padding:0 4px}
+.dsrc{color:rgba(15,56,97,0.38);font-size:10px;text-align:center;padding:6px 16px 16px;font-family:sans-serif;flex-shrink:0}
+.dfaida{color:rgba(15,56,97,0.72);font-size:12px;text-align:center;padding:0 14px 6px;font-family:sans-serif;flex-shrink:0;line-height:1.5;font-weight:600}
+.dots{display:none!important;justify-content:center;flex-wrap:wrap;gap:5px;margin-bottom:6px;padding:0 4px}
 .nav-btns{display:flex;gap:10px;justify-content:center;margin-bottom:9px;padding:0 14px}
 .nav-btn{flex:1;padding:9px;background:rgba(15,56,97,0.08);border:1px solid rgba(15,56,97,0.22);border-radius:12px;color:var(--gold);font-size:14px;cursor:pointer;font-family:'Amiri','Tajawal',sans-serif;transition:background .15s}
 .nav-btn:active{background:rgba(15,56,97,0.22)}
@@ -65,7 +65,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .dbn{margin-top:22px;padding:12px 32px;background:var(--gdim);border:1px solid rgba(15,56,97,0.35);border-radius:12px;color:var(--gold);cursor:pointer;font-size:15px;font-family:'Tajawal',sans-serif}
 /* شاشة البداية */
 .home{flex:1;display:flex;flex-direction:column;padding:20px 16px;gap:14px;position:relative;z-index:1;justify-content:flex-start}
-.hcard{background:rgba(255,255,255,0.85);border:1px solid var(--gbrd);border-radius:22px;padding:22px 20px;cursor:pointer;position:relative;overflow:hidden;transition:transform .15s,background .15s;text-align:center}
+.hcard{background:#faf7f0;border:1px solid var(--gbrd);border-radius:22px;padding:22px 20px;cursor:pointer;position:relative;overflow:hidden;transition:transform .15s,background .15s;text-align:center}
 .hcard:active{transform:scale(0.97);background:rgba(255,255,255,0.09)}
 .hcard::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle at top right,rgba(15,56,97,0.08),transparent 70%);pointer-events:none}
 .hcard-icon{font-size:28px;margin-bottom:10px}
@@ -73,7 +73,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .hcard-sub{color:rgba(240,230,204,0.5);font-size:12px;font-family:sans-serif}
 /* وضع نهاري */
 /* الوضع الليلي — الكحلي الداكن والذهبي (التصميم الأصلي) */
-.app.dark{background:linear-gradient(170deg,#0a1f35 0%,#142d52 55%,#5c3a08 100%)}
+.app.dark{background:linear-gradient(175deg,#0d2137 0%,#132a44 55%,#1c2c3a 80%,#2a2c26 100%)}
 .app.dark .hdr{background:rgba(0,0,0,0.28);border-bottom-color:rgba(232,201,122,0.22)}
 .app.dark .hdr h1,.app.dark .horn{color:#e8c97a}
 .app.dark .hsub{color:rgba(232,201,122,0.6)}
@@ -81,12 +81,14 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .app.dark .tab{color:rgba(232,201,122,0.4)}
 .app.dark .tab.on{color:#e8c97a;border-bottom-color:#e8c97a}
 .app.dark .card{background:rgba(255,255,255,0.055);border-color:rgba(232,201,122,0.22)}
-.app.dark .dtext{color:#f0e6cc}
+.app.dark .dtext{color:#ede3cf}
 .app.dark .cname,.app.dark .an{color:#e8c97a}
 .app.dark .dsrc{color:rgba(232,201,122,0.4)}
 .app.dark #shareCardBtn{background:rgba(232,201,122,0.1)!important;border-color:rgba(232,201,122,0.3)!important;color:#e8c97a!important}
 .app.dark #aboutBtn{color:rgba(232,201,122,0.5)!important}
 .app.dark .rc{color:#e8c97a}
+.rc-card-num{color:#c8980a}
+.app.dark .rc-card-num{color:#f0d488}
 .app.dark .hcard{background:rgba(255,255,255,0.055);border-color:rgba(232,201,122,0.22)}
 .app.dark .hcard-title{color:#e8c97a}
 .app.dark .hcard-sub{color:rgba(232,201,122,0.6)}
@@ -133,11 +135,11 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 #backBtn:active{background:rgba(15,56,97,0.08);transform:translateX(-50%) scale(0.97)}
 .misc-screen{flex:1;display:flex;flex-direction:column;padding:14px;position:relative;z-index:1;overflow-y:auto;display:none}
 .misc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 10px;row-gap:16px}
-.mcard{background:rgba(255,255,255,0.85);border:1px solid var(--gbrd);border-radius:16px;padding:16px 12px;cursor:pointer;text-align:center;transition:transform .15s,background .15s;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100px}
+.mcard{background:#faf7f0;border:1px solid var(--gbrd);border-radius:16px;padding:16px 12px;cursor:pointer;text-align:center;transition:transform .15s,background .15s;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100px}
 .mcard-wide{grid-column:1 / -1}
 
 /* بطاقات حصن المسلم المدمجة */
-.hisn-card{background:rgba(255,255,255,0.85);border:1px solid var(--gbrd);border-radius:12px;padding:10px 8px;cursor:pointer;text-align:center;transition:transform .1s,background .15s;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;min-height:62px;overflow:hidden}
+.hisn-card{background:#faf7f0;border:1px solid var(--gbrd);border-radius:12px;padding:10px 8px;cursor:pointer;text-align:center;transition:transform .1s,background .15s;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;min-height:62px;overflow:hidden}
 .hisn-card:active{transform:scale(0.97);background:rgba(255,255,255,0.95)}
 .hisn-card-title{color:var(--gold);font-family:'Amiri','Tajawal',serif;font-size:14px;font-weight:700;line-height:1.2;padding:0 4px}
 .hisn-card-cnt{position:absolute;top:4px;left:6px;color:rgba(15,56,97,0.55);font-size:10px;font-weight:500;font-family:sans-serif}
@@ -159,7 +161,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .mcard-title{color:var(--gold);font-size:14px;font-weight:600}
 
 /* شاشة اختيار اللغة */
-.lang-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#a3ccde;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.lang-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
 .lang-title{color:var(--gold);font-size:22px;font-weight:700;margin-bottom:8px;font-family:'Tajawal',sans-serif}
 .lang-sub{color:rgba(240,230,204,0.6);font-size:13px;margin-bottom:24px;text-align:center}
 .lang-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%;max-width:380px}
@@ -286,8 +288,8 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .bs-line{width:20px;height:1px;background:rgba(232,201,122,0.35)}
 .bs-txt{color:rgba(232,201,122,0.55);font-family:'Tajawal',sans-serif;font-size:10px;font-weight:500;white-space:nowrap}
 /* شريط الوضع الليلي */
-.mode-bar-wrap{padding:8px 14px 10px}
-.mode-bar{display:flex;width:100%;height:30px;background:#0F1E38;border:1px solid rgba(232,201,122,0.25);border-radius:8px;padding:3px;cursor:pointer;transition:background .2s}
+.mode-bar-wrap{padding:6px 14px 8px}
+.mode-bar{display:flex;width:100%;height:22px;background:#0F1E38;border:1px solid rgba(232,201,122,0.25);border-radius:7px;padding:2px;cursor:pointer;transition:background .2s}
 .mode-knob{width:50%;height:100%;background:#e8c97a;border-radius:6px;transition:transform .28s cubic-bezier(.4,0,.2,1);transform:translateX(0)}
 /* الوضع الليلي: المؤشر ينزلق لليسار */
 .app.dark .mode-knob{transform:translateX(-100%)}
@@ -302,7 +304,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .prayer-block-value{font-size:22px;font-weight:700;font-family:'Tajawal',sans-serif;font-variant-numeric:tabular-nums}
 .prayer-block:first-child{border-left:1px solid rgba(232,201,122,0.2)}
 /* البطاقات الرئيسية بأيقونات */
-.main-tile{background:#ffffff;border:1px solid rgba(15,56,97,0.15);border-radius:16px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;transition:transform .1s,box-shadow .15s;min-height:80px;box-shadow:0 1px 3px rgba(15,56,97,0.04)}
+.main-tile{background:#faf7f0;border:1px solid rgba(15,56,97,0.13);border-radius:16px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;transition:transform .1s,box-shadow .15s;min-height:80px;box-shadow:0 1px 3px rgba(15,56,97,0.04)}
 .main-tile:active{transform:scale(0.98)}
 .main-tile-text{flex:1;text-align:right}
 .main-tile-title{color:#0f3861;font-family:'Amiri','Tajawal',serif;font-size:22px;font-weight:700;line-height:1.2}
@@ -324,6 +326,9 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 .app.dark .main-tile-title{color:#e8c97a}
 .app.dark .main-tile-sub{color:rgba(240,230,204,0.55)}
 .app.dark .main-tile-icon{color:#e8c97a}
+.app.dark .main-tile-icon{display:none}
+.app.dark .main-tile{justify-content:center}
+.app.dark .main-tile-text{flex:0 1 auto;text-align:center}
 .app.dark .new-hdr{background:linear-gradient(135deg,#0a1f35 0%,#142d52 100%)}
 .app.dark .prayer-strip{background:rgba(232,201,122,0.08);border:1px solid rgba(232,201,122,0.25)}
 </style>
@@ -378,7 +383,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
  </div>
  <!-- نافذة أوقات الصلاة -->
  <div id="prayerModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:1000;justify-content:center;align-items:center">
- <div style="background:#a3ccde;border:1px solid rgba(15,56,97,0.3);border-radius:20px;padding:24px;width:85%;max-width:360px;direction:rtl;font-family:'Tajawal',sans-serif">
+ <div style="background:#f7f3ea;border:1px solid rgba(15,56,97,0.25);border-radius:20px;padding:24px;width:85%;max-width:360px;direction:rtl;font-family:'Tajawal',sans-serif">
  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
  <h3 style="color:#0f3861;font-size:17px;font-weight:700">أوقات الصلاة</h3>
  <div style="display:flex;gap:8px;align-items:center">
@@ -398,7 +403,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 
  <!-- نافذة اختيار المدينة -->
  <div id="cityModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:1001;justify-content:center;align-items:center">
- <div style="background:#a3ccde;border:1px solid rgba(15,56,97,0.3);border-radius:20px;padding:20px;width:88%;max-width:380px;max-height:82vh;direction:rtl;font-family:'Tajawal',sans-serif;display:flex;flex-direction:column">
+ <div style="background:#f7f3ea;border:1px solid rgba(15,56,97,0.25);border-radius:20px;padding:20px;width:88%;max-width:380px;max-height:82vh;direction:rtl;font-family:'Tajawal',sans-serif;display:flex;flex-direction:column">
  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-shrink:0">
  <h3 style="color:#0f3861;font-size:18px;font-weight:700">اختر مدينتك</h3>
  <button onclick="document.getElementById('cityModal').style.display='none'" style="background:none;border:none;color:rgba(15,56,97,0.6);font-size:22px;cursor:pointer">×</button>
@@ -409,7 +414,7 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
 
  <!-- نافذة القبلة -->
  <div id="qiblaModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:1000;justify-content:center;align-items:center">
- <div style="background:#a3ccde;border:1px solid rgba(15,56,97,0.3);border-radius:20px;padding:24px;width:85%;max-width:360px;direction:rtl;font-family:'Amiri','Tajawal',sans-serif;text-align:center">
+ <div style="background:#f7f3ea;border:1px solid rgba(15,56,97,0.25);border-radius:20px;padding:24px;width:85%;max-width:360px;direction:rtl;font-family:'Amiri','Tajawal',sans-serif;text-align:center">
  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
  <h3 style="color:#0f3861;font-size:17px;font-weight:700">اتجاه القبلة</h3>
  <button onclick="document.getElementById('qiblaModal').style.display='none'" style="background:none;border:none;color:rgba(15,56,97,0.6);font-size:20px;cursor:pointer">×</button>
@@ -649,10 +654,10 @@ body{display:flex;justify-content:center;min-height:100vh;min-height:100dvh}
  <button class="tab" id="t0" onclick="sw(0)">الصباح</button>
  <button class="tab" id="t1" onclick="sw(1)">المساء</button>
  </div>
- <div class="cbar" id="cbar" style="display:none;margin:14px 14px 4px;padding:4px 10px">
+ <div class="cbar" id="cbar" style="display:none;margin:6px 14px 8px">
  <div class="cr">
  <button class="fbtn" onclick="cf(-2)" aria-label="تصغير الخط">−</button>
- <span class="fsl" id="fsl">18</span>
+ <span class="fsl" id="fsl">١٨</span>
  <button class="fbtn" onclick="cf(2)" aria-label="تكبير الخط">+</button>
  <span class="flb">الخط</span>
  </div>
@@ -765,6 +770,29 @@ function cardKey(d){
  return sec+'|'+(d.nm||'')+'|'+txt;
 }
 function getDelta(d){const k=cardKey(d);return (k && fsDeltas[k]!==undefined)?fsDeltas[k]:0;}
+// تُرجع نص الفايدة فقط إذا لم يكن مطابقاً لاسم الذكر (منعاً للتكرار البصري)
+function faidaText(d){
+ if(!d.f) return '';
+ if(!d.nm) return d.f;
+ const norm=s=>s.replace(/[\s،.ًٌٍَُِّْـ]/g,'');
+ const a=norm(d.nm), b=norm(d.f);
+ if(!a||!b) return d.f;
+ // إذا أحدهما يحتوي الآخر، أو التشابه عالٍ → اعتبرهما مكررين وأخفِ الفايدة
+ if(a.includes(b)||b.includes(a)) return '';
+ const setA=new Set(a), setB=new Set(b);
+ let inter=0; setA.forEach(c=>{if(setB.has(c))inter++;});
+ const sim=inter/Math.max(setA.size,setB.size);
+ if(sim>0.75 && Math.abs(a.length-b.length)<8) return '';
+ // مقارنة الكلمات: إذا تشاركا أغلب الكلمات المهمة (>3 أحرف) → مكرران
+ const words=s=>s.replace(/[ًٌٍَُِّْـ]/g,'').split(/\s+/).map(w=>w.replace(/[،.]/g,'')).filter(w=>w.length>3);
+ const wA=words(d.nm), wB=words(d.f);
+ if(wA.length>=2&&wB.length){
+  const wSetB=new Set(wB);
+  let shared=0; wA.forEach(w=>{if(wSetB.has(w))shared++;});
+  if(shared>=2 && shared/Math.min(wA.length,wB.length)>=0.66) return '';
+ }
+ return d.f;
+}
 function setDelta(d,v){const k=cardKey(d);if(k){fsDeltas[k]=v;try{localStorage.setItem('athkar_fsDeltas',JSON.stringify(fsDeltas));}catch(e){}}}
 
 const HIDE_NAME=['آية الكرسي','آمن الرسول','سورة الإخلاص','سورة الفلق','سورة الناس','دعاء المساء','أصبحنا','الرضا بالله','الإشهاد','شكر النعمة','حسبي الله','بسم الله','اللهم بك أمسينا','اللهم بك أصبحنا','فطرة الإسلام','سبحان الله عدد خلقه','اللهم عافني','العفو والعافية','يا حي يا قيوم','أمسينا وأمسى الملك','اللهم عالم الغيب','أعوذ بكلمات الله','الصلاة على النبي','الاستغفار من الشرك','أعوذ بك من الهم','الاستغفار','لك الحمد','التوكل الكامل','لا إله إلا الله ١٠٠','سبحان الله وبحمده ١٠٠','اللهم أنت السلام','لا إله إلا الله وحده','سبحان الله / الحمد لله / الله أكبر','تتمة المئة','لا إله إلا الله — فجر ومغرب','اللهم أعني على ذكرك','اللهم إني أسألك الجنة'];
@@ -1427,23 +1455,23 @@ function renderPrayerTimesContent(t){
  const [h,m]=t24.split(':').map(Number);
  const ampm=h>=12?'م':'ص';
  const h12=h%12||12;
- return `${h12}:${String(m).padStart(2,'0')} ${ampm}`;
+ return `${ar(h12)}:${ar(String(m).padStart(2,'0'))} ${ampm}`;
  }
 
  function getElapsed(t24){
  const [h,m]=t24.split(':').map(Number);
  const diff=nowMin-(h*60+m);
  if(diff<0) return null;
- if(diff<60) return `مضى ${diff} د`;
- return `مضى ${Math.floor(diff/60)}س ${diff%60>0?' '+diff%60+'د':''}`;
+ if(diff<60) return `مضى ${ar(diff)} د`;
+ return `مضى ${ar(Math.floor(diff/60))}س ${diff%60>0?' '+ar(diff%60)+'د':''}`;
  }
 
  function getRemaining(t24){
  const [h,m]=t24.split(':').map(Number);
  const diff=(h*60+m)-nowMin;
  if(diff<=0) return null;
- if(diff<60) return `باقي ${diff} د`;
- return `باقي ${Math.floor(diff/60)}س ${diff%60>0?' '+diff%60+'د':''}`;
+ if(diff<60) return `باقي ${ar(diff)} د`;
+ return `باقي ${ar(Math.floor(diff/60))}س ${diff%60>0?' '+ar(diff%60)+'د':''}`;
  }
 
  // أقرب صلاة قادمة
@@ -1499,7 +1527,7 @@ function renderPrayerTimesContent(t){
  if(diff<0){
  // لم تأت بعد
  const rem=-diff;
- el.textContent=rem<60?`باقي ${rem} د`:`باقي ${Math.floor(rem/60)}س${rem%60?' '+rem%60+'د':''}`;
+ el.textContent=rem<60?`باقي ${ar(rem)} د`:`باقي ${ar(Math.floor(rem/60))}س${rem%60?' '+ar(rem%60)+'د':''}`;
  } else if(diff<=30){
  el.textContent=diff===0?'الآن':diff<60?`مضى ${diff} د`:`مضى ${Math.floor(diff/60)}س`;
  } else {
@@ -1549,7 +1577,7 @@ function showQibla(){
  const y=Math.sin(dLng)*Math.cos(lat2);
  const x=Math.cos(lat1)*Math.sin(lat2)-Math.sin(lat1)*Math.cos(lat2)*Math.cos(dLng);
  const qiblaDir=((Math.atan2(y,x)*180/Math.PI)+360)%360;
- txtEl.textContent=`اتجاه القبلة: ${Math.round(qiblaDir)}° من الشمال الجغرافي`;
+ txtEl.textContent=`اتجاه القبلة: ${ar(Math.round(qiblaDir))}° من الشمال الجغرافي`;
  startCompass(qiblaDir,lat,lng);
  }
 
@@ -1867,7 +1895,7 @@ const HISN_DATA={
  {nm:"الخروج من الخلاء",t:"غُفْرَانَكَ",n:1,s:"أبو داود",c:1,l:"https://binwahaf.com/ar/audio-book-lesson/1043/"},
  ],
  hisn_thr_wudu:[
- {nm:"قبل الوضوء",t:"بِسْمِ اللَّهِ",n:1,s:"أبو داود",c:1,l:"https://binwahaf.com/ar/audio-book-lesson/1040/"},
+ {nm:"قبل الوضوء",fs:48,t:"بِسْمِ اللَّهِ",n:1,s:"أبو داود",c:1,l:"https://binwahaf.com/ar/audio-book-lesson/1040/"},
  {nm:"بعد الوضوء",t:"أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",n:1,s:"مسلم",l:"https://binwahaf.com/ar/audio-book-lesson/1045/"},
  {nm:"بعد الوضوء",t:"اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",n:1,s:"الترمذي",l:"https://binwahaf.com/ar/audio-book-lesson/1046/"},
  ],
@@ -2000,8 +2028,8 @@ const HISN_DATA={
  {nm:"دعاء الذبح والنحر",t:"بِسْمِ اللَّهِ وَاللَّهُ أَكْبَرُ اللَّهُمَّ مِنْكَ وَلَكَ",n:1,s:"مسلم"},
  ],
  hisn_fadl:[
- {nm:"فضل الذكر",fs:20,f:"مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت",t:"مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لَا يَذْكُرُ رَبَّهُ مَثَلُ الْحَيِّ وَالْمَيِّتِ (البخاري ومسلم)",n:1,s:"من الأحاديث"},
- {nm:"فضل الصلاة على النبي",fs:22,f:"من صلى علي واحدة صلى الله عليه عشراً",t:"مَنْ صَلَّى عَلَيَّ صَلَاةً صَلَّى اللَّهُ عَلَيْهِ بِهَا عَشْرًا (مسلم)",n:1,s:"من الأحاديث"},
+ {nm:"فضل الذكر",fs:20,f:"مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت",t:"مَثَلُ الَّذِي يَذْكُرُ رَبَّهُ وَالَّذِي لَا يَذْكُرُ رَبَّهُ مَثَلُ الْحَيِّ وَالْمَيِّتِ",n:1,s:"البخاري ومسلم"},
+ {nm:"فضل الصلاة على النبي",fs:22,f:"من صلى علي واحدة صلى الله عليه عشراً",t:"مَنْ صَلَّى عَلَيَّ صَلَاةً صَلَّى اللَّهُ عَلَيْهِ بِهَا عَشْرًا",n:1,s:"مسلم"},
  {nm:"الصلاة على النبي الإبراهيمية",fs:20,f:"أفضل صيغ الصلاة على النبي صلى الله عليه وسلم",t:"اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",n:1,s:"البخاري ومسلم",l:"https://binwahaf.com/ar/audio-book-lesson/1092/"},
  {nm:"الصلاة المختصرة",fs:26,f:"صيغة مختصرة للصلاة على النبي صلى الله عليه وسلم",t:"اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ",n:1,s:"مستحبة"},
  {nm:"إكثار الصلاة يوم الجمعة",fs:26,f:"أكثروا من الصلاة عليّ في يوم الجمعة",t:"اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى نَبِيِّنَا مُحَمَّدٍ",n:100,s:"أبو داود"},
@@ -2618,8 +2646,8 @@ function renderMisc(){
  const textLenM=d.t.replace(/<[^>]+>/g,'').length;
  var baseFs2;
  if(d.fs) baseFs2=d.fs;
- else if(textLenM<20) baseFs2=90;
- else if(textLenM<80) baseFs2=44;
+ else if(textLenM<20) baseFs2=75;
+ else if(textLenM<80) baseFs2=35;
  else baseFs2=maxFit2;
  baseFs2 = Math.min(baseFs2, maxFit2);
  let dlt2 = getDelta(d);
@@ -2628,36 +2656,39 @@ function renderMisc(){
  const showName=d.nm&&d.nm.length>0;
  const cardH2=400;
  document.getElementById('mn').innerHTML=`
- ${d.f?`<div class="dfaida"> ${d.f}</div>`:''}
- <div class="card${isBig2?' big':''}" onclick="tap()" style="cursor:pointer;position:relative">
- <button onclick="event.stopPropagation();shareDhikr()" aria-label="مشاركة" style="position:absolute;top:10px;left:10px;z-index:5;background:rgba(15,56,97,0.08);border:1px solid rgba(15,56,97,0.2);border-radius:10px;height:34px;padding:0 10px;display:flex;align-items:center;gap:5px;cursor:pointer;color:#0f3861;font-family:Tajawal,sans-serif;font-size:12px;font-weight:600" id="shareCardBtn"><span>مشاركة</span>
+ ${(()=>{const ft=faidaText(d);return ft?`<div class="dfaida"> ${ft}</div>`:''})()}
+ <div style="position:relative">
+ <button onclick="event.stopPropagation();shareDhikr()" aria-label="مشاركة" style="position:absolute;top:-11px;left:-7px;z-index:6;background:#ffffff;border:1px solid rgba(15,56,97,0.25);border-radius:10px;height:34px;padding:0 10px;display:flex;align-items:center;gap:5px;cursor:pointer;color:#0f3861;font-family:Tajawal,sans-serif;font-size:12px;font-weight:600;box-shadow:0 2px 6px rgba(15,56,97,0.12)" id="shareCardBtn"><span>مشاركة</span>
  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
  </button>
+ <div class="card${isBig2?' big':''}" onclick="tap()" style="cursor:pointer;position:relative">
  <div class="cname" id="cn" style="display:${showName?'block':'none'}">${showName?d.nm:''}</div>
  <div class="dwrap"><div class="dtext ${useCenter2?'center':''}" id="dt" style="font-size:${sz}px">${d.t}</div></div>
- ${d.n>1?`<div style="text-align:center;padding:6px 0 18px;font-size:32px;font-weight:700;color:var(--gold);font-family:sans-serif;line-height:1;flex-shrink:0" id="rcCard">${cur}</div>`:''}
- <div class="dsrc" id="ds">${d.s}${d.l?` <a href="javascript:void(0)" style="color:#e8c97a;text-decoration:none;margin-right:6px;font-size:11px;background:rgba(232,201,122,0.15);padding:2px 8px;border-radius:8px;border:1px solid rgba(232,201,122,0.3);white-space:nowrap;cursor:pointer" onclick="event.stopPropagation();openSourceModal('${d.l}')">🎧 استمع للشرح</a>`:""}</div>
+ ${d.n>1?`<div class="rc-card-num" style="text-align:center;padding:6px 0 18px;font-size:32px;font-weight:700;font-family:sans-serif;line-height:1;flex-shrink:0" id="rcCard">${cur}</div>`:''}
+ ${d.l?`<div style="text-align:center;padding:4px 16px 10px;flex-shrink:0;position:relative;z-index:10"><a href="${d.l}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="position:relative;z-index:10;display:inline-flex;align-items:center;gap:8px;color:#0f3861;text-decoration:none;font-size:14px;font-weight:700;font-family:'Tajawal',sans-serif;background:linear-gradient(135deg,rgba(232,201,122,0.22),rgba(232,201,122,0.12));padding:10px 22px;border-radius:24px;border:1.5px solid rgba(232,201,122,0.5);box-shadow:0 2px 8px rgba(232,201,122,0.15)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#c8980a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg><span style="color:#8a6d1a">استمع للشرح</span></a></div>`:''}
+ <div class="dsrc" id="ds">${d.s}</div>
+ </div>
  </div>
  <div class="tap-zone" onclick="tap()" role="button" tabindex="0" aria-label="انقر للعد"></div>`;
 
- const rcEl2=document.getElementById('rc');if(rcEl2)rcEl2.textContent=cur;
+ const rcEl2=document.getElementById('rc');if(rcEl2)rcEl2.textContent=ar(cur);
  const rcInlineEl2=document.getElementById('rcInline');
  if(rcInlineEl2){rcInlineEl2.style.display='none';}
- const rcCard2=document.getElementById('rcCard');if(rcCard2)rcCard2.textContent=cur;
+ const rcCard2=document.getElementById('rcCard');if(rcCard2)rcCard2.textContent=ar(cur);
 
  const dotsElM=document.getElementById('dots');
  const nb2M=document.getElementById('navbtns');
  const cb2M=document.getElementById('cbar');
  if(isBig2){
  if(dotsElM){
-  if(miscSub==='share'){dotsElM.style.display='flex';dotsElM.innerHTML=L.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
+  if(miscSub==='share'){dotsElM.style.display='none';dotsElM.innerHTML=L.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
   else dotsElM.style.display='none';
  }
  // شريط الخط وأزرار التنقل: تظهر في قسم المشاركة (share) حتى للأذكار الكبيرة
  if(miscSub==='share'){
   if(cb2M){
    cb2M.style.display='flex';
-   const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=sz;
+   const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=ar(sz);
    const ixlEl=document.getElementById('ixl');if(ixlEl)ixlEl.textContent=ar(idx+1)+' / '+ar(L.length);
   }
   if(nb2M){nb2M.style.display='flex';const btns=nb2M.querySelectorAll('.nav-btn');if(btns[0])btns[0].disabled=(idx===0);if(btns[1])btns[1].disabled=(idx>=L.length-1);}
@@ -2666,8 +2697,8 @@ function renderMisc(){
   if(cb2M) cb2M.style.display='none';
  }
  } else {
- if(dotsElM){dotsElM.style.display='flex';dotsElM.innerHTML=L.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
- if(cb2M){cb2M.style.display='flex';const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=sz;const ixlEl=document.getElementById('ixl');if(ixlEl)ixlEl.textContent=ar(idx+1)+' / '+ar(L.length);}
+ if(dotsElM){dotsElM.style.display='none';dotsElM.innerHTML=L.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
+ if(cb2M){cb2M.style.display='flex';const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=ar(sz);const ixlEl=document.getElementById('ixl');if(ixlEl)ixlEl.textContent=ar(idx+1)+' / '+ar(L.length);}
  if(nb2M){nb2M.style.display='flex';const btns=nb2M.querySelectorAll('.nav-btn');if(btns[0])btns[0].disabled=(idx===0);if(btns[1])btns[1].disabled=(idx>=L.length-1);}
  }
  ensureFitDOM();
@@ -2720,6 +2751,16 @@ function goSection(t){
 function openSourceModal(url){
  if(!url)return;
  window.open(url, '_blank', 'noopener');
+}
+// فتح رابط الشرح بأضمن طريقة (تعمل في PWA وآيفون)
+function openLesson(url){
+ if(!url)return;
+ // جرّب فتح نافذة جديدة
+ const w=window.open(url,'_blank');
+ // لو فشل (محظور في بعض المتصفحات)، انتقل مباشرة
+ if(!w||w.closed||typeof w.closed==='undefined'){
+  window.location.href=url;
+ }
 }
 
 // حول التطبيق
@@ -2906,7 +2947,7 @@ function ensureFitDOM(){
  sz--; dt.style.fontSize=sz+'px'; guard++;
  }
  // حدّث العداد المعروض لحجم الخط
- const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=Math.round(sz);
+ const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=ar(Math.round(sz));
  });
 }
 
@@ -3221,22 +3262,25 @@ function render(){
 
  const mn=document.getElementById('mn');
  mn.innerHTML=`
- ${d.f?`<div class="dfaida"> ${d.f}</div>`:''}
- <div class="card${isBig?' big':''}" onclick="tap()" style="cursor:pointer;position:relative">
- <button onclick="event.stopPropagation();shareDhikr()" aria-label="مشاركة" style="position:absolute;top:10px;left:10px;z-index:5;background:rgba(15,56,97,0.08);border:1px solid rgba(15,56,97,0.2);border-radius:10px;height:34px;padding:0 10px;display:flex;align-items:center;gap:5px;cursor:pointer;color:#0f3861;font-family:Tajawal,sans-serif;font-size:12px;font-weight:600" id="shareCardBtn"><span>مشاركة</span>
+ ${(()=>{const ft=faidaText(d);return ft?`<div class="dfaida"> ${ft}</div>`:''})()}
+ <div style="position:relative">
+ <button onclick="event.stopPropagation();shareDhikr()" aria-label="مشاركة" style="position:absolute;top:-11px;left:-7px;z-index:6;background:#ffffff;border:1px solid rgba(15,56,97,0.25);border-radius:10px;height:34px;padding:0 10px;display:flex;align-items:center;gap:5px;cursor:pointer;color:#0f3861;font-family:Tajawal,sans-serif;font-size:12px;font-weight:600;box-shadow:0 2px 6px rgba(15,56,97,0.12)" id="shareCardBtn"><span>مشاركة</span>
  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
  </button>
+ <div class="card${isBig?' big':''}" onclick="tap()" style="cursor:pointer;position:relative">
  <div class="cname" id="cn" style="display:${showName?'block':'none'}">${showName?d.nm:''}</div>
  <div class="dwrap"><div class="dtext ${useCenter?'center':''}" id="dt" style="font-size:${sz}px">${d.t}</div></div>
- ${d.n>1?`<div style="text-align:center;padding:6px 0 18px;font-size:32px;font-weight:700;color:var(--gold);font-family:sans-serif;line-height:1;flex-shrink:0" id="rcCard">${cur}</div>`:''}
- <div class="dsrc" id="ds">${d.s}${d.l?` <a href="javascript:void(0)" style="color:#e8c97a;text-decoration:none;margin-right:6px;font-size:11px;background:rgba(232,201,122,0.15);padding:2px 8px;border-radius:8px;border:1px solid rgba(232,201,122,0.3);white-space:nowrap;cursor:pointer" onclick="event.stopPropagation();openSourceModal('${d.l}')">🎧 استمع للشرح</a>`:""}</div>
+ ${d.n>1?`<div class="rc-card-num" style="text-align:center;padding:6px 0 18px;font-size:32px;font-weight:700;font-family:sans-serif;line-height:1;flex-shrink:0" id="rcCard">${cur}</div>`:''}
+ ${d.l?`<div style="text-align:center;padding:4px 16px 10px;flex-shrink:0;position:relative;z-index:10"><a href="${d.l}" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="position:relative;z-index:10;display:inline-flex;align-items:center;gap:8px;color:#0f3861;text-decoration:none;font-size:14px;font-weight:700;font-family:'Tajawal',sans-serif;background:linear-gradient(135deg,rgba(232,201,122,0.22),rgba(232,201,122,0.12));padding:10px 22px;border-radius:24px;border:1.5px solid rgba(232,201,122,0.5);box-shadow:0 2px 8px rgba(232,201,122,0.15)"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#c8980a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg><span style="color:#8a6d1a">استمع للشرح</span></a></div>`:''}
+ <div class="dsrc" id="ds">${d.s}</div>
+ </div>
  </div>
  <div class="tap-zone" onclick="tap()" role="button" tabindex="0" aria-label="انقر للعد"></div>`;
 
- const rcEl2=document.getElementById('rc');if(rcEl2)rcEl2.textContent=cur;
+ const rcEl2=document.getElementById('rc');if(rcEl2)rcEl2.textContent=ar(cur);
  const rcInlineEl=document.getElementById('rcInline');
  if(rcInlineEl){rcInlineEl.style.display='none';}
- const rcCard=document.getElementById('rcCard');if(rcCard)rcCard.textContent=cur;
+ const rcCard=document.getElementById('rcCard');if(rcCard)rcCard.textContent=ar(cur);
 
  const dotsEl=document.getElementById('dots');
  const nb2=document.getElementById('navbtns');
@@ -3248,8 +3292,8 @@ function render(){
  if(nb2) nb2.style.display='none';
  if(cb2) cb2.style.display='none';
  } else {
- if(dotsEl){dotsEl.style.display='flex';dotsEl.innerHTML=L2.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
- if(cb2){cb2.style.display='flex';const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=sz;const ixlEl=document.getElementById('ixl');if(ixlEl)ixlEl.textContent=ar(idx+1)+' / '+ar(L2.length);}
+ if(dotsEl){dotsEl.style.display='none';dotsEl.innerHTML=L2.map((_,i)=>`<div class="dot${done.includes(i)?' done':''}${i===idx?' cur':''}"></div>`).join('');}
+ if(cb2){cb2.style.display='flex';const fslEl=document.getElementById('fsl');if(fslEl)fslEl.textContent=ar(sz);const ixlEl=document.getElementById('ixl');if(ixlEl)ixlEl.textContent=ar(idx+1)+' / '+ar(L2.length);}
  if(nb2){nb2.style.display='flex';const btns=nb2.querySelectorAll('.nav-btn');if(btns[0])btns[0].disabled=(idx===0);if(btns[1])btns[1].disabled=(idx>=L2.length-1);}
  }
  ensureFitDOM();
@@ -3352,7 +3396,7 @@ function setTasbihType(text,max,btn){
  // احفظ فهرس الذكر الحالي للانتقال التلقائي
  if(btn){_tasbihIdx=parseInt(btn.dataset.tidx);}
  document.getElementById('tasbihText').textContent=text || ' ';
- document.getElementById('tasbihTarget').textContent='/ '+max;
+ document.getElementById('tasbihTarget').textContent='/ '+ar(max);
  resetTasbih();
  // إبراز الزر النشط
  if(btn){
@@ -3399,7 +3443,7 @@ function doTasbih(){
  const bar=document.getElementById('tasbihBar');
  const done=document.getElementById('tasbihDone');
  const btn=document.getElementById('tasbihCount');
- num.textContent=_tasbihN;
+ num.textContent=ar(_tasbihN);
  bar.style.width=(_tasbihN/_tasbihMax*100)+'%';
  // animation
  num.style.animation='none';
@@ -3424,7 +3468,7 @@ function resetTasbih(){
  const num=document.getElementById('tasbihNum');
  const bar=document.getElementById('tasbihBar');
  const done=document.getElementById('tasbihDone');
- if(num)num.textContent='0';
+ if(num)num.textContent=ar(0);
  if(bar)bar.style.width='0%';
  if(done)done.style.display='none';
 }
@@ -3487,7 +3531,7 @@ function updatePrayerBtn(){
  const hh=Math.floor(diff/3600000);
  const mm=Math.floor((diff%3600000)/60000);
  const ss=Math.floor((diff%60000)/1000);
- cdEl.textContent=(hh>0?hh+':':'')+String(mm).padStart(2,'0')+':'+String(ss).padStart(2,'0');
+ cdEl.textContent=ar((hh>0?hh+':':'')+String(mm).padStart(2,'0')+':'+String(ss).padStart(2,'0'));
 }
 // عدّاد الصلاة القادمة: يتوقف لما الصفحة مخفية لتوفير البطارية
 let _prayerTick=null;
@@ -3760,8 +3804,8 @@ function renderHifzHome(){
    btnBg:'rgba(232,201,122,0.12)', btnBorder:'rgba(232,201,122,0.3)', btnText:'#e8c97a',
    bar:'rgba(232,201,122,0.15)', barFill:'linear-gradient(90deg,#e8c97a,#c8980a)'
  } : {
-   bg:'#a3ccde',
-   card:'#ffffff', cardBorder:'rgba(15,56,97,0.3)',
+   bg:'linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%)',
+   card:'#faf7f0', cardBorder:'rgba(15,56,97,0.3)',
    text:'#0f3861', textSoft:'rgba(15,56,97,0.7)',
    btnBg:'rgba(15,56,97,0.1)', btnBorder:'rgba(15,56,97,0.25)', btnText:'#0f3861',
    bar:'rgba(15,56,97,0.1)', barFill:'linear-gradient(90deg,#0f3861,#1a5488)'
@@ -3810,8 +3854,8 @@ function renderHifzQuestion(){
    optBg:'rgba(232,201,122,0.06)', optBorder:'rgba(232,201,122,0.25)',
    bar:'rgba(232,201,122,0.15)', barFill:'linear-gradient(90deg,#e8c97a,#c8980a)'
  } : {
-   bg:'#a3ccde',
-   card:'#ffffff', cardBorder:'rgba(15,56,97,0.2)',
+   bg:'linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%)',
+   card:'#faf7f0', cardBorder:'rgba(15,56,97,0.2)',
    text:'#0f3861', textSoft:'rgba(15,56,97,0.7)',
    btnBg:'rgba(15,56,97,0.1)', btnBorder:'rgba(15,56,97,0.25)',
    optBg:'#ffffff', optBorder:'rgba(15,56,97,0.25)',
@@ -3827,7 +3871,7 @@ function renderHifzQuestion(){
  for(var i=0;i<HIFZ_LEVELS.length;i++){if(HIFZ_LEVELS[i].level===hifzState.level){levelTitle=HIFZ_LEVELS[i].title;break;}}
  var h='<div style="padding:16px;max-width:500px;width:100%;margin:0 auto;box-sizing:border-box;height:100%;display:flex;flex-direction:column">';
  h+='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">';
- h+='<div style="color:'+C.textSoft+';font-family:Tajawal,sans-serif;font-size:13px;font-weight:600">'+prog+' / '+total+'</div>';
+ h+='<div style="color:'+C.textSoft+';font-family:Tajawal,sans-serif;font-size:13px;font-weight:600">'+ar(prog)+' / '+ar(total)+'</div>';
  h+='<div style="color:'+C.text+';font-family:Tajawal,sans-serif;font-size:14px;font-weight:700">'+levelTitle+'</div>';
  h+='<button onclick="renderHifzHome()" style="background:'+C.btnBg+';border:1px solid '+C.btnBorder+';border-radius:8px;color:'+C.text+';font-size:12px;padding:4px 10px;cursor:pointer;font-weight:600">← رجوع</button></div>';
  h+='<div style="background:'+C.bar+';border-radius:4px;height:5px;margin-bottom:20px"><div style="background:'+C.barFill+';height:100%;width:'+(prog/total*100)+'%;border-radius:4px"></div></div>';
@@ -3852,8 +3896,18 @@ function checkHifzAnswer(idx,btn){
  var btns=document.querySelectorAll('#hifzScreen button[id^="hopt"]');
  btns.forEach(function(b,i){
  b.style.pointerEvents='none';
- if(opts[i]===q.answer){b.style.background='rgba(100,200,100,0.2)';b.style.borderColor='rgba(100,200,100,0.6)';b.style.color='#64c864';}
- else if(i===idx&&!correct){b.style.background='rgba(200,100,100,0.2)';b.style.borderColor='rgba(200,100,100,0.6)';b.style.color='#c86464';}
+ if(opts[i]===q.answer){
+  b.style.background = isDark ? 'rgba(95,201,127,0.18)' : 'rgba(45,122,63,0.15)';
+  b.style.borderColor = isDark ? 'rgba(95,201,127,0.6)' : '#2d7a3f';
+  b.style.color = isDark ? '#7ee0a0' : '#1e5f2e';
+  b.style.fontWeight='700';
+ }
+ else if(i===idx&&!correct){
+  b.style.background = isDark ? 'rgba(212,120,120,0.18)' : 'rgba(180,50,50,0.12)';
+  b.style.borderColor = isDark ? 'rgba(212,120,120,0.6)' : '#b03232';
+  b.style.color = isDark ? '#e89090' : '#a02020';
+  b.style.fontWeight='700';
+ }
  });
  setTimeout(function(){
  hifzState.qIdx++;
@@ -3870,9 +3924,9 @@ function showHifzResult(){
    text:'#e8c97a', textSoft:'rgba(232,201,122,0.6)',
    btn:'rgba(232,201,122,0.1)', btnBorder:'rgba(232,201,122,0.35)', btnText:'#e8c97a'
  } : {
-   bg:'#a3ccde',
+   bg:'linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%)',
    text:'#0f3861', textSoft:'rgba(15,56,97,0.7)',
-   btn:'#ffffff', btnBorder:'rgba(15,56,97,0.35)', btnText:'#0f3861'
+   btn:'#faf7f0', btnBorder:'rgba(15,56,97,0.35)', btnText:'#0f3861'
  };
  hs.style.background=C.bg;
  var score=hifzState.score,total=hifzState.total,pct=Math.round(score/total*100);
@@ -3888,8 +3942,8 @@ function showHifzResult(){
  var h='<div style="padding:24px;max-width:500px;width:100%;margin:0 auto;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;min-height:100dvh;text-align:center">';
  h+='<div style="font-size:60px;margin-bottom:16px">'+stars+'</div>';
  h+='<div style="color:'+C.text+';font-family:Tajawal,sans-serif;font-size:22px;font-weight:700;margin-bottom:8px">نتيجتك</div>';
- h+='<div style="color:'+C.text+';font-family:Tajawal,sans-serif;font-size:48px;font-weight:700;margin-bottom:4px">'+score+'/'+total+'</div>';
- h+='<div style="color:'+C.textSoft+';font-family:Tajawal,sans-serif;font-size:18px;margin-bottom:20px;font-weight:600">'+pct+'%</div>';
+ h+='<div style="color:'+C.text+';font-family:Tajawal,sans-serif;font-size:48px;font-weight:700;margin-bottom:4px">'+ar(score)+'/'+ar(total)+'</div>';
+ h+='<div style="color:'+C.textSoft+';font-family:Tajawal,sans-serif;font-size:18px;margin-bottom:20px;font-weight:600">'+ar(pct)+'%</div>';
  h+='<div style="color:'+(passed?(isDark?'#5fc97f':'#2d7a3f'):(isDark?'#d4a94a':'#8a5a1a'))+';font-family:Tajawal,sans-serif;font-size:15px;margin-bottom:30px;font-weight:600">'+msg+'</div>';
  h+='<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">';
  h+='<button onclick="startHifzLevel('+level+')" style="background:'+C.btn+';border:1px solid '+C.btnBorder+';border-radius:12px;color:'+C.btnText+';font-family:Tajawal,sans-serif;font-size:14px;padding:10px 20px;cursor:pointer;font-weight:600">إعادة المستوى</button>';
@@ -4003,7 +4057,7 @@ function printCertificate(){
 
  <!-- العداد -->
  <div id="tasbihCount" style="width:180px;height:180px;border-radius:50%;background:rgba(232,201,122,0.10);border:2px solid rgba(232,201,122,0.45);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:all 0.15s;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
- <div id="tasbihNum" style="font-size:64px;font-weight:700;color:#e8c97a;font-family:sans-serif;line-height:1">0</div>
+ <div id="tasbihNum" style="font-size:64px;font-weight:700;color:#e8c97a;font-family:sans-serif;line-height:1">٠</div>
  <div id="tasbihTarget" style="font-size:13px;color:rgba(232,201,122,0.55);margin-top:4px;font-weight:500">/ 33</div>
  </div>
 
@@ -4092,7 +4146,7 @@ window.showTasbih = function(){
  if(_origShowTasbih) _origShowTasbih();
 };
 </script>
-<div id="hifzScreen" class="hifz-screen" style="display:none;position:fixed;top:0;left:50%;transform:translateX(-50%);bottom:0;z-index:9999;background:#a3ccde;overflow-y:auto;direction:rtl;width:100%;max-width:430px;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);box-sizing:border-box"></div>
+<div id="hifzScreen" class="hifz-screen" style="display:none;position:fixed;top:0;left:50%;transform:translateX(-50%);bottom:0;z-index:9999;background:linear-gradient(180deg,#1a2e50 0%,#42597e 13%,#a7bdd2 30%,#dfdccf 55%,#efe9db 100%);overflow-y:auto;direction:rtl;width:100%;max-width:430px;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);box-sizing:border-box"></div>
 
 <!-- نافذة حول التطبيق -->
 <div id="aboutModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2000;justify-content:center;align-items:center;padding:16px;direction:rtl" onclick="if(event.target===this)closeAbout()">
